@@ -53,7 +53,7 @@ const Login = (props) => {
                 <input type="password" className="password-input" name="password" onChange={onChange} value={credentials.password} id="password" />
               </div>
               <div className="loginPageBtnSection">
-                <button type="submit" className="loginPageBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                <button type="submit" className="loginPageBtn"><i className="fa-solid fa-arrow-right"></i></button>
               </div>
             </form>
             {/* </div> */}

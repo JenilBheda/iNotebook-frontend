@@ -66,7 +66,7 @@ const Signup = (props) => {
                                         <input type="password" className="signUpConfirmPasswordInput" name='confirmPassword' id="confirmPassword" onChange={onChange} minLength={5} required />
                                     </div>
                                     <div className="signUpPageSection">
-                                    <button type="submit" className="signUpPageBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                                    <button type="submit" className="signUpPageBtn"><i className="fa-solid fa-arrow-right"></i></button>
                                     </div>
                                 </form>
                             </div>
