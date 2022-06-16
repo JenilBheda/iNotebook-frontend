@@ -7,7 +7,7 @@ var cors = require('cors')
 connectToMongo();
 const app = express()
 // I can change the port anytime so I can't get confuse in different files when I run them 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 app.use(cors())
 // To send the JSON body request to database and read it in database
