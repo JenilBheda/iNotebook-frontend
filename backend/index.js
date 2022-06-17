@@ -14,8 +14,16 @@ app.use(cors())
 app.use(express.json())
 
 // Available Routes
-app.use('/api/auth', require('./routes/auth'))
-app.use('/api/notes', require('./routes/notes'))
+// app.use('/api/auth', require('./routes/auth'))
+// app.use('/api/notes', require('./routes/notes'))
+const apiRouter = express.Router();
+const authRouter = express.Router();
+const notesRouter = express.Router();
+authRouter.use("/auth", require('./routes/auth'));
+notesRouter.use("/notes", require('./routes/notes'));
+apiRouter.use(authRouter);
+apiRouter.use(notesRouter);
+app.use("/api", apiRouter);
 
 // Validation that the port is running
 app.listen(port, () => {
