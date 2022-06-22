@@ -190,6 +190,8 @@ nav {
   background-color: #10002B;
   color: #D47AE8;
   padding-left: 2.6rem;
+  display: flex;
+  align-items: center;
 }
 /* ---------- Alert Component Ends ---------- */
 
