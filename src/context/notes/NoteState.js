@@ -5,7 +5,7 @@ import { useState } from "react";
 
 // I created a arrow function so I can create my app state and also added props because it uses {props.children}.
 const NoteState = (props) => {
-  const host = "https://inotebackup.herokuapp.com"
+  const host = "https://inotebookreal.herokuapp.com"
   const notesInitial = []
   const [notes, setNotes] = useState(notesInitial)
 
