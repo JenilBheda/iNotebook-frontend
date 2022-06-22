@@ -24,12 +24,45 @@ nav {
   justify-content: center;
 }
 
+.navbar-brand {
+  margin: 0 auto;
+  width: 100%;
+  display: none;
+}
+
+.navLogoSec {
+  display: block;
+  margin: auto;
+}
+
+.navLogo {
+  display: block;
+  margin: auto;
+}
+
+.navbar-brand ul {
+  text-align: right;
+}
+
+.phoneNav {}
+
+.phoneNav i {
+  display: none;
+}
+
+
+.navbar-brand ul li {
+  float: none;
+  display: inline-block;
+}
+
 .navbar-logo {
   text-decoration: none;
   color: #D47AE8;
+  font-size: 1.50rem;
 }
 
-.navbar-logo:hover{
+.navbar-logo:hover {
   color: #D47AE8;
 }
 
@@ -37,11 +70,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 0.2rem;
 }
-
-/* .navBody{
-  width: 100vw;
-} */
 
 .navContainer {
   background: #240046;
@@ -52,16 +82,16 @@ nav {
   align-items: center;
   border-radius: 0px 0px 70px 70px;
   padding-bottom: 0.5rem;
-  /* margin-right: 1rem; */
 }
 
 .loginBtn {
   text-decoration: none;
   color: #D47AE8;
-  padding: 0.2rem;
+  padding: 0.5rem;
   font-weight: 700;
   border-radius: 4px;
-  margin-right: 1rem;
+  text-align: center;
+  margin-right: 0.3rem;
 }
 
 .loginBtn:hover {
@@ -70,9 +100,11 @@ nav {
 }
 
 .signUpBtn {
-  padding: 0.2rem;
-  margin-right: 1rem;
+  margin-right: 0.3rem;
   text-decoration: none;
+  /* padding: 0.5rem 0rem 0rem 0rem; */
+  text-align: center;
+  padding: 0.5rem;
   font-weight: 700;
   border-radius: 4px;
   color: #D47AE8;
@@ -137,24 +169,42 @@ nav {
   background-color: #D47AE8;
   color: #10002B;
 }
-
 /* ---------- Navbar Component Ends ---------- */
+
+/* ---------- Alert Component Starts ---------- */
+
+.alertBody{
+  height: 100px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inotebookAlert {
+  width: 395px;
+  height: 65px;
+  text-align: center;
+  border: 1px solid #D47AE8;
+  border-radius: 10px;
+  background-color: #10002B;
+  color: #D47AE8;
+  padding-left: 2.6rem;
+}
+/* ---------- Alert Component Ends ---------- */
 
 
 
 /* ---------- Home Component Starts ---------- */
 .homeBody {
   display: grid;
-  /* height: 100vw; */
   max-width: 100vw;
-  /* grid-template-rows: ; */
   grid-template-columns: 1fr 1fr;
   /* margin: 0 auto; */
   grid-gap: 2rem;
   row-gap: 12rem;
   justify-items: center;
   align-items: center;
-  /* padding-bottom: 8rem; */
   ;
 }
 
@@ -206,11 +256,11 @@ nav {
 .designBox {
   background-color: #10002B;
   width: 240px;
+  height: 200PX;
   padding: 0.6rem;
   text-align: left;
   margin: 0.5rem;
   border-radius: 20px;
-  /* color: #D47AE8; */
   border: 1px solid #D47AE8;
 }
 
@@ -298,7 +348,6 @@ nav {
   background-color: #10002B;
   display: grid;
   justify-items: center;
-  /* align-items: center; */
 }
 
 .loginBox {
@@ -324,7 +373,7 @@ nav {
   border-left: 0px;
 }
 
-.email-input:focus{
+.email-input:focus {
   background-color: #10002B;
   color: #D47AE8;
 }
@@ -359,7 +408,6 @@ nav {
   text-align: center;
   font-size: 20px;
   border-radius: 10px;
-  /* border: 1px solid #D47AE8; */
   transition: ease-out 0.5s;
 }
 
@@ -374,7 +422,6 @@ nav {
 }
 
 .loginSection {
-  /* max-width: 100vw; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -400,12 +447,11 @@ nav {
   height: 550px;
   display: grid;
   justify-items: center;
-  /* align-items: center; */
 }
 
 .signUpBox {
   width: 360px;
-  height: 400px;
+  height: 420px;
   border: 1px solid #9D4EDD;
   border-radius: 30px;
   padding: 1rem;
@@ -454,13 +500,6 @@ nav {
   color: #D47AE8;
   font-weight: 600;
 }
-
-/* .nameInput {
-  border-bottom: 1px solid #9D4EDD;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-} */
 
 .signUpEmailInput {
   background-color: #10002B;
@@ -594,14 +633,8 @@ nav {
 
 /* ---------- NoteItem Component Starts ---------- */
 /*********** NoteItem Sections Starts ***********/
-/* .yourNotesBody{
-  margin-left: 3rem;
-} */
-
 .card-body {
-  /* border: 1px solid #9D4EDD; */
   background-color: #10002B;
-  /* overflow: hidden; */
   margin: 0.5rem;
 }
 
@@ -615,7 +648,6 @@ nav {
 
 .noteDescription {
   display: -webkit-box;
-  /* color: #be29ec; */
   color: #D47AE8;
   overflow: hidden;
   -webkit-line-clamp: 6;
@@ -648,21 +680,14 @@ nav {
 }
 
 .editNote {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .deleteIcon {
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 
 }
 
-
-
-/* .faIconBody i {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-} */
 /*********** NoteItem Sections Ends ***********/
 /* ---------- NoteItem Component Ends ---------- */
 
@@ -671,7 +696,7 @@ nav {
 /* ---------- Notes Component Starts ---------- */
 /*********** Notes Sections Starts ***********/
 .yourNoteItems {
-  margin: 1.6rem;
+  margin: 1rem;
   padding-left: 1.5rem;
 }
 
@@ -690,7 +715,7 @@ nav {
   background-color: #10002B;
 }
 
-.modal-title{
+.modal-title {
   color: #D47AE8;
 }
 
@@ -704,12 +729,12 @@ nav {
   color: #D47AE8;
 }
 
-.updateNote-form-div form textarea:focus{
+.updateNote-form-div form textarea:focus {
   background-color: #10002B;
   color: #D47AE8;
 }
 
-.updateNote-form-div form label{
+.updateNote-form-div form label {
   color: #D47AE8;
   font-weight: 600;
 }
@@ -769,11 +794,8 @@ nav {
 
 
 
-@media only screen and (max-width: 1100px) {
-  /* .body{
-    width: 100%;
-  } */
 
+@media only screen and (max-width: 1100px) {
   .homeBody {
     /* background-color: red; */
   }
@@ -804,13 +826,9 @@ nav {
 
 
 @media only screen and (max-width: 1022px) {
-
-  .commentsBody {
-    /* background-color: yellow; */
-  }
-
   .designBox {
     width: 205px;
+    height: 220px;
   }
 
 }
@@ -818,7 +836,53 @@ nav {
 
 
 
+@media only screen and (max-width: 990px) {
+  .navBody {
+    display: none;
+  }
 
+  .navbar-brand {
+    background-color: #240046;
+    display: block;
+  }
+
+  .navLogo {
+    margin-left: 2rem;
+  }
+
+  .phoneNav {
+    width: 35px;
+  }
+
+  .phoneNav i {
+    display: block;
+    float: right;
+    padding-right: 1rem;
+  }
+
+  .phone-nav-expand {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .phoneLoginForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phoneNavLoginBtns {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /*********** Alert Section CSS Starts ***********/
+  .alertBody{
+    margin-top: 0rem;
+  }
+  /*********** Alert Section CSS Ends ***********/
+}
 
 
 
@@ -861,13 +925,9 @@ nav {
     width: 350px;
   }
 
-  .cloudText {
-    /* padding: 1rem; */
-
-  }
-
   .designBox {
     width: 180px;
+    height: 250px;
   }
 
   .firstImg {
@@ -907,15 +967,6 @@ nav {
     row-gap: 3rem;
   }
 
-
-  .homeContainer {
-    /* justify-items: center; */
-  }
-
-  .container1 {
-    /* margin-bottom: 2rem; */
-  }
-
   .imgDisplayNonePhone {
     display: none;
   }
@@ -935,7 +986,7 @@ nav {
 
   .designBox {
     width: 170px;
-    height: 200px;
+    height: 250px;
   }
 }
 
@@ -951,18 +1002,13 @@ nav {
 
 
 @media only screen and (max-width: 744px) {
-
-  .homeBody {
-    /* background-color: #fff; */
-  }
-
   .commentsBody {
     margin-top: 2rem;
   }
 
   .designBox {
     width: 235px;
-    height: 160px;
+    height: 195px;
   }
 
   .commentsSection {
@@ -981,7 +1027,7 @@ nav {
     margin-top: 1rem;
   }
 
-  
+
 }
 
 
@@ -998,13 +1044,21 @@ nav {
 
 
 @media only screen and (max-width: 450px) {
+
   /*********** Home Section Starts ***********/
   .container1 {
     width: 300px;
   }
 
+  .container2 {
+    width: 300px;
+  }
+
+  .container3 {
+    width: 300px;
+  }
+
   .DecribeHead {
-    /* padding: 0.5rem; */
     text-align: center;
     width: 310px;
     font-size: 23px;
@@ -1026,13 +1080,14 @@ nav {
   .thirdImg {
     height: 350px;
   }
-  
+
   .CtaHeading {
     text-align: center;
   }
+
   /*********** Home Section Ends ***********/
-  
-  
+
+
   /*********** AddNote Section Starts ***********/
   .createNoteIconBody {
     /* display: grid; */
@@ -1040,64 +1095,68 @@ nav {
     width: 100%;
     /* height: 190px; */
   }
-  
+
   .createNoteImage {
     height: 250px;
   }
-  
+
   .createNoteIconBox {
     width: 290px;
   }
+
   /*********** AddNote Section Ends ***********/
-  
-  
-  
+
+
+
   /*********** Notes Sections Starts ***********/
   .yourNoteItems {
     display: flex;
     justify-content: center;
     padding-left: 0rem;
   }
-  
-  
+
+
   .notesHeading {
     text-align: center;
   }
-  
+
   .yournoteH {
     display: flex;
     justify-content: center;
   }
+
   /*********** Notes Section Ends ***********/
-  
-  
+
+
 }
 
 
 
 
 
-@media only screen and (max-Width: 400px){
+@media only screen and (max-Width: 424px) {
+
   /*********** SignUp Section Starts ***********/
-  .signUpBox{
+  .signUpBox {
     width: 270px;
   }
-  
-  .nameInput{
-    width: 200px;
-  }
-  
-  .signUpEmailInput{
-    width: 200px;
-  }
-  
-  .signUpInputPassword{
-    width: 200px;
+
+  .nameInput {
+    width: 210px;
   }
 
-  .signUpConfirmPasswordInput{
-    width: 200px;
+  .signUpEmailInput {
+    width: 210px;
   }
+
+  .signUpInputPassword {
+    width: 210px;
+  }
+
+  .signUpConfirmPasswordInput {
+    width: 210px;
+  }
+
   /*********** SignUp Section Ends ***********/
 
 
@@ -1107,25 +1166,116 @@ nav {
 
 
   /*********** login Section Starts ***********/
-  .loginBody{
-    /* width: 270px; */
-
-  }
-
-  .loginBox{
+  .loginBox {
     width: 250px;
     justify-content: center;
   }
 
-  .email-input{
+  .email-input {
     width: 200px;
   }
 
-  .password-input{
+  .password-input {
     width: 200px;
   }
+
   /*********** login Section Ends ***********/
+
+
+
+  /*********** Home Section Starts ***********/
+  .DecribeHead {
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  .cloudText {
+    margin: 1rem auto;
+    /* padding: 1rem; */
+    width: 200px;
+  }
+
+  .firstImg {
+    height: 230px;
+  }
+
+  .secImg {
+    height: 230px;
+  }
+
+  .thirdImg {
+    height: 280px;
+  }
+
+  .inotebookAlert{
+    padding-left: 2px;
+    
+    text-align: left;
+    height: 75px;
+  }
 }
 
-/*********** Home Section Media Queries Ends ***********/
+/*********** Home Section Ends ***********/
+
+
+
+
+
+
+
+@media only screen and (max-width: 325px) {
+  .DecribeHead {
+    margin: 0 auto;
+    width: 170px;
+  }
+
+  .cloudText {
+    margin: 1rem auto;
+    /* padding: 1rem; */
+    width: 170px;
+  }
+
+  .firstImg {
+    height: 200px;
+  }
+
+  .secImg {
+    height: 200px;
+  }
+
+  .thirdImg {
+    height: 250px;
+  }
+
+  .createNoteIconBody{
+    width: auto;
+    height: auto;
+  }
+
+  .createNoteIconBox{
+    width: 200px;
+    height: 170px;
+    background-color: #10002B;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* .createBtn{
+    height: 100px;
+  } */
+  
+  .createNoteImage{
+    height: 130px;
+  }
+
+
+  .card {
+    width: 200px;
+  }
+
+  .card-body {
+    width: 180px;
+  }
+}
+
 /* ---------- Mdeia Queries Component Ends ---------- */

@@ -24,7 +24,6 @@ function App() {
   }
   return (
     <>
-    <React.StrictMode>
       {/* I have to wrap everthing inside the <NoteState> so the state only applies under it. */}
       <NoteState>
         <Router>
@@ -39,7 +38,6 @@ function App() {
             </Routes>
         </Router>
       </NoteState>
-      </React.StrictMode>
     </>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useContext, useRef } from "react";
 import noteContext from "../context/notes/noteContext";
 import "../component/Modal"
 // import Modal from "../component/Modal";
-import createIcon from "../Add Note.png";
+import createIcon from "../Add Note test 5.png";
 
 const AddNote = (props) => {
     const context = useContext(noteContext);

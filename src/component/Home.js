@@ -1,8 +1,8 @@
 import "../App.css";
 import { Link } from "react-router-dom";
-import image from "../health-check 1.png";
-import image1 from "../cloud new modified.png";
-import image2 from "../privacy modified.png";
+import image from "../health-check final 3.png";
+import image1 from "../cloud modified 3.png";
+import image2 from "../privacy modified final 1.png";
 
 const Home = (props) => {
   // const {showAlert} = props
@@ -24,8 +24,8 @@ const Home = (props) => {
           <img className="secImg" src={image1} alt="" />
         </div>
         <div className="homeContainer conDisplayNonePhone">
-          <h2 className="DecribeHead">Access your notes from any device</h2>
-          <p className="cloudText">Stay connected with iNotebook, Save notes on cloud and access it from
+          <h2 className="DecribeHead DecribeHead2">Access your notes from any device</h2>
+          <p className="cloudText cloudText2">Stay connected with iNotebook, Save notes on cloud and access it from
             anywhere & from any device. </p>
         </div>
         
@@ -39,9 +39,8 @@ const Home = (props) => {
         </div>
 
         <div className="homeContainer container3">
-          <h2 className="DecribeHead">Access your notes from any device</h2>
-          <p className="cloudText">Stay connected with iNotebook, Save notes on cloud and access it from
-            anywhere & from any device. </p>
+          <h2 className="DecribeHead">Your Privacy Is Our Top Priority</h2>
+          <p className="cloudText">Our server is end to end encrypted so no one can access your personal information. </p>
         </div>
 
         <div className="imageBody3">
@@ -55,28 +54,28 @@ const Home = (props) => {
       <div className="commentsBody">
         <div className="commentsSection">
           <div className="commentsContainer1 designBox">
-            <h3>Sharwil</h3>
-            <p>iNotebook is a very nice web based note application that I can access it from anywhere from my mobile or laptop</p>
+            <h3 className="ctaHeading">Sharwil</h3>
+            <p className="ctaPara">iNotebook is a very nice web based note application that I can access it from anywhere from my mobile or laptop</p>
           </div>
 
           <div className="commentsContainer2">
             <div className=" designBox">
-              <h3>Kush</h3>
-              <p>iNotebook is a very nice web based note application that I can access it from anywhere from my mobile or laptop</p>
+              <h3 className="ctaHeading">Kush</h3>
+              <p className="ctaPara">iNotebook is a very nice web based note application that I can access it from anywhere from my mobile or laptop</p>
             </div>
           </div>
 
           <div className="commentsContainer3">
             <div className=" designBox">
-              <h3>Siddhesh</h3>
-              <p>iNotebook is a very nice web based note application that I can access it from anywhere from my mobile or laptop</p>
+              <h3 className="ctaHeading">Siddhesh</h3>
+              <p className="ctaPara">iNotebook is a very nice web based note application that I can access it from anywhere from my mobile or laptop</p>
             </div>
           </div>
           
            <div className="commentsContainer4">
             <div className=" designBox">
-              <h3>Krishna</h3>
-              <p>iNotebook is a very nice web based note application that I can access it from anywhere from my mobile or laptop</p>
+              <h3 className="ctaHeading">Krishna</h3>
+              <p className="ctaPara">iNotebook is a very nice web based note application that I can access it from anywhere from my mobile or laptop</p>
             </div>
           </div>
         </div>

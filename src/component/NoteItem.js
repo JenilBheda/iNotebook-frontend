@@ -10,7 +10,7 @@ const NoteItem = (props) => {
             {/* <div className='yourNotesBody' style={{}}> */}
             <div className="col-md-3 ynBody" >
                 <div className="card" >
-                    <div className="card-body" style={{ height: "190px", marginBottom: "1rem" }}>
+                    <div className="card-body" style={{ height: "210px", marginBottom: "1rem" }}>
                         <h5 className="card-title noteTitle">{note.title}</h5>
                         <p className="card-text noteDescription">{note.description}</p>
                     </div>
